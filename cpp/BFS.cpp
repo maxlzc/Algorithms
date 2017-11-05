@@ -18,7 +18,6 @@ void printG(vector<point> G,int x)
 }
 bool BFS()
 {
-
     /*
      * 1-->2-->5
      * 2-->1-->5-->3-->4
