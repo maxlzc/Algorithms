@@ -4,7 +4,18 @@
 
 #include "BFS.h"
 
+void printG(vector<point> G,int x)
+{
 
+    if(x!=0)
+        cout<<"-->"<<x;
+    else
+        cout<<x;
+    for(auto i :G[x].p)
+    {
+        printG(G,i.x);
+    }
+}
 bool BFS()
 {
 
@@ -38,6 +49,7 @@ bool BFS()
     Q.push_back(G[0]);
     while(Q.size())
     {
+
         auto u = Q[0];
         Q.pop_front();
         for(int i=0;i<A[0].size();i++)
@@ -50,5 +62,6 @@ bool BFS()
             }
         }
     }
+   printG(G,0);
     return true;
 }
