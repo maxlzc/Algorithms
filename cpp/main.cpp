@@ -1,10 +1,9 @@
-#include <iostream>
-#include <vector>
-#include <functional>
-#include "BFS.h"
+
+
+#include "same_prefix_string.h"
 using namespace std;
 int main() {
-    std::cout << "Hello, World!" << std::endl;
-    BFS();
+    vector<string> s={"abcdefg","qaabcdsd","abcdefg"};
+    printSamePreString(s);
     return 0;
 }

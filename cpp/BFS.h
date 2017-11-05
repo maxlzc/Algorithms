@@ -4,11 +4,8 @@
 
 #ifndef CPP_BFS_H
 #define CPP_BFS_H
-#include <deque>
-#include <array>
-#include <iostream>
-#include <vector>
-using namespace std;
+
+#include "head.h"
 bool BFS();
 class point{
 public:
